@@ -51,7 +51,7 @@ export default function Skills() {
               className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-[0_10px_40px_rgba(59,130,246,0.2)]"
             >
               <h3 className="text-xl font-semibold mb-4 text-white flex items-center gap-2">
-                <span className={`w-2 h-2 rounded-full ${getSkillColor(category)}`}></span>
+                <span className={`w-2 h-2 rounded-full ${getSkillColor(category.category)}`}></span>
                 {category.category}
               </h3>
               <div className="flex flex-wrap gap-2">
