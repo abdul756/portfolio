@@ -55,6 +55,8 @@ jobs:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       - name: Restore cache
         uses: actions/cache@v4
         with:
@@ -70,7 +72,10 @@ jobs:
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Remove CNAME if exists
-        run: rm -f ./out/CNAME
+        run: |
+          rm -f ./out/CNAME
+          echo "CNAME removed (if existed)"
+          ls -la ./out/ | grep -i cname || echo "No CNAME file found"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
