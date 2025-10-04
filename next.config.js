@@ -4,7 +4,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: '/abdul-portfolio',
 };
 
 module.exports = nextConfig;
