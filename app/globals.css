@@ -1,0 +1,162 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #000000;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Custom Animations */
+@keyframes gradient-x {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-20px) scale(1.05);
+  }
+}
+
+@keyframes float-delayed {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(20px) scale(1.05);
+  }
+}
+
+@keyframes scan {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(400px);
+  }
+}
+
+@keyframes scan-horizontal {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.animate-gradient-x {
+  animation: gradient-x 3s ease infinite;
+}
+
+.animate-gradient-shift {
+  animation: gradient-shift 15s ease infinite;
+  background-size: 200% 200%;
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.animate-float-delayed {
+  animation: float-delayed 8s ease-in-out infinite;
+}
+
+.animate-scan {
+  animation: scan 3s ease-in-out infinite;
+}
+
+.animate-scan-horizontal {
+  animation: scan-horizontal 2s ease-in-out;
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 1s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-pulse-glow {
+  animation: pulse-glow 2s ease-in-out infinite;
+}
+
+/* Grid pattern background */
+.bg-grid-pattern {
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.1) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.1) 1px, transparent 1px);
+  background-size: 50px 50px;
+}
+
+/* Glowing text effect */
+.glow-text {
+  text-shadow: 0 0 10px rgba(59, 130, 246, 0.5),
+               0 0 20px rgba(59, 130, 246, 0.3),
+               0 0 30px rgba(59, 130, 246, 0.2);
+}
+
+/* Card hover 3D effect */
+.card-3d {
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease;
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) rotateX(5deg) rotateY(5deg);
+}
