@@ -6,6 +6,56 @@ export default function Experience() {
           Experience
         </h2>
         <div className="space-y-8">
+          {/* Vozzo AI Labs Experience */}
+          <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 md:p-8 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-1">
+            <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
+              <div>
+                <h3 className="text-2xl font-semibold text-white mb-1">AI Engineer</h3>
+                <p className="text-lg text-blue-400 font-semibold">Vozzo AI Labs</p>
+                <p className="text-sm text-gray-500">Voice AI Infrastructure</p>
+              </div>
+              <span className="text-gray-500 mt-2 md:mt-0 font-medium">Sept 2025 – Present</span>
+            </div>
+
+            <div className="space-y-6 mt-6">
+              {/* Project: Voice Agent Telemetry */}
+              <div className="p-4 bg-gray-800/50 rounded-lg border border-gray-700">
+                <div className="flex items-center gap-2 mb-3">
+                  <div className="w-2 h-2 bg-cyan-500 rounded-full"></div>
+                  <h4 className="font-semibold text-white">Voice Agent Telemetry System</h4>
+                </div>
+                <ul className="space-y-2 text-gray-300 text-sm">
+                  <li className="flex items-start">
+                    <span className="text-cyan-400 mr-2">•</span>
+                    Implemented comprehensive telemetry system for voice agent infrastructure using LiveKit and PostgreSQL to track latencies and system performance metrics
+                  </li>
+                  <li className="flex items-start">
+                    <span className="text-cyan-400 mr-2">•</span>
+                    Designed and deployed latency monitoring pipeline enabling real-time visibility into voice agent performance across distributed systems
+                  </li>
+                </ul>
+              </div>
+
+              {/* Key Technologies */}
+              <div className="mt-4 p-4 bg-gradient-to-r from-cyan-900/20 to-blue-900/20 rounded-lg border border-cyan-500/30">
+                <h4 className="font-semibold text-cyan-400 mb-3 flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+                  </svg>
+                  Technologies & Tools
+                </h4>
+                <div className="flex flex-wrap gap-2">
+                  <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-xs font-medium">LiveKit</span>
+                  <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-xs font-medium">PostgreSQL</span>
+                  <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-xs font-medium">Voice AI</span>
+                  <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-xs font-medium">Telemetry</span>
+                  <span className="px-3 py-1 bg-cyan-900/30 text-cyan-300 rounded-full text-xs font-medium">Real-time Systems</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Bobble AI Experience */}
           <div className="bg-gray-900/50 backdrop-blur-sm border border-gray-800 rounded-lg p-6 md:p-8 hover:border-blue-500/50 transition-all duration-300 transform hover:-translate-y-1">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
               <div>
@@ -13,7 +63,7 @@ export default function Experience() {
                 <p className="text-lg text-blue-400 font-semibold">Bobble AI</p>
                 <p className="text-sm text-gray-500">Artificial Intelligence Domain</p>
               </div>
-              <span className="text-gray-500 mt-2 md:mt-0 font-medium">Feb 2022 – Present</span>
+              <span className="text-gray-500 mt-2 md:mt-0 font-medium">Feb 2022 – Sept 2025</span>
             </div>
 
             <div className="space-y-6 mt-6">
